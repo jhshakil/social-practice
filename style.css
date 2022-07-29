@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
+    --color-white: hsl(252, 30%, 100%);
     --color-dark: hsl(252, 30%, 17%);
     --color-light: hsl(252, 30%, 95%);
     --color-gray: hsl(252, 15%, 65%);
@@ -125,4 +126,34 @@ nav .create {
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+/* Main  */
+
+main {
+    position: relative;
+    top: 5.4rem;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 18vw auto 20vw;
+    grid-gap: 2rem;
+    position: relative;
+}
+
+main .container .left {
+    position: sticky;
+    height: max-content;
+    top: var(--sticky-top-left);
+}
+
+main .container .left .profile {
+    padding: var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
 }
